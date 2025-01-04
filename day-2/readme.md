@@ -70,7 +70,9 @@ Monitoring is the process of keeping an eye on these metrics over time to unders
 eksctl create cluster --name=observability \
                       --region=us-east-1 \
                       --zones=us-east-1a,us-east-1b \
-                      --without-nodegroup
+                      --without-nodegroup \
+                      --version 1.24
+
 ```
 ```bash
 eksctl utils associate-iam-oidc-provider \
